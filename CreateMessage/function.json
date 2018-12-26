@@ -1,0 +1,22 @@
+{
+  "disabled": false,
+  "bindings": [{
+    "direction": "in",
+    "type": "httpTrigger",
+    "authLevel": "anonymous",
+    "name": "req",
+    "route": "messages",
+    "methods": [
+      "post"
+    ]
+  }, {
+    "direction": "out",
+    "type": "http",
+    "name": "httpResponse"
+  }, {
+    "direction": "out",
+    "type": "signalR",
+    "name": "websocketResponse",
+    "hubName": "chat"      
+  }]
+}

@@ -1,0 +1,18 @@
+{
+  "disabled": false,
+  "bindings": [{
+    "direction": "in",
+    "type": "httpTrigger",
+    "authLevel": "anonymous",
+    "name": "req"
+  }, {
+    "direction": "out",
+    "type": "http",
+    "name": "$return"
+  }, {
+    "direction": "in",
+    "type": "signalRConnectionInfo",
+    "name": "connectionInfo",
+    "hubName": "chat"
+  }]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "chatfunctions",
+  "version": "1.0.0",
+  "scripts": {
+    "lint": "eslint --fix **/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.2.1"
+  },
+  "license": "MIT"
+}
